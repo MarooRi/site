@@ -8,70 +8,8 @@
     <link rel="icon" href="https://maroori.github.io/site/site.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://maroori.github.io/site/site.ico" type="image/x-icon">
     <meta name="description" content="Сайт Ri Maro">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="D:\20з\my-site\site\site\style.css" />
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 500px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active {
-            background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 2s;
-            animation-name: fade;
-            animation-duration: 2s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
         html,
         body {
             overflow: hidden;
@@ -122,7 +60,7 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 2em;
             margin: 0;
             letter-spacing: 2px;
@@ -148,91 +86,27 @@
             color: #f33;
         }
     </style>
+
 </head><span id="warning-container"><i data-reactroot=""></i></span>
-
-
 
 <body>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-
-            <img src="photo_1.jpg" style="width:100%">
-
-        </div>
-
-        <div class="mySlides fade">
-            <img src="photo_2.jpg" style="width:100%">
-        </div>
-
-
-    </div>
-    <br>
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
     <div id="wrapper">
+
+
         <h1>Сайт Maro Ri</h1>
-        <p> Мой инстаграм </p>
-        <p>Another paragraph! Maybe more text!</p>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-
-                <img src="photo_1.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <img src="photo_2.jpg" style="width:100%">
-            </div>
+        <p>
+            <a href="https://www.instagram.com/ri_ma_ro/" target="_blank">Мой инстаграм</a>
+        </p>
 
 
+        <div class="wrapper">
+            <img src="photo_1.jpg">
+            <img src="photo_2.jpg">
+            <img src="photo_3.jpg">
+            <img src="photo_4.jpg">
         </div>
-        <br>
 
-        <script>
-            var slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) { slideIndex = 1 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                setTimeout(showSlides, 2000); // Change image every 2 seconds
-            }
-        </script>
     </div>
 </body>
 
