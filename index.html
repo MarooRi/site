@@ -8,7 +8,83 @@
     <link rel="icon" href="https://maroori.github.io/site/site.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://maroori.github.io/site/site.ico" type="image/x-icon">
     <meta name="description" content="Сайт Ri Maro">
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
 
+        body {
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        #wrapper {
+            position: absolute;
+            left: 0;
+            width: 320px;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            margin-left: -160px;
+            margin-top: -160px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 9px;
+            text-transform: uppercase;
+            margin: 12px 0;
+            left: 4px;
+        }
+
+        h2 {
+            color: #999;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: .12em;
+            margin-bottom: 30px;
+            left: 3px;
+        }
+
+        h1,
+        h2 {
+            position: relative;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            transition: color .2s ease;
+        }
+
+        a:hover {
+            color: #f33;
+        }
+    </style>
 </head>
 
 <body>
