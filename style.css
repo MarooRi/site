@@ -44,6 +44,12 @@
     .wrapper img:nth-child(6) { animation-delay: 25s;  }
     .wrapper img:nth-child(7) { animation-delay: 30s;  }
     .wrapper img:nth-child(8) { animation-delay: 35s;  }
+
+    body
+{
+background-color:#FFFAFA
+
+}
    
   
   
